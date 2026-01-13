@@ -12,29 +12,41 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Lostar", serif;
-  --nav-font: "Poppins",  sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #101c1f; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #00dafe; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #faf8f6; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #101c1f;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #00dafe;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #faf8f6;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #f8fdfe;  /* The default color of the main navmenu links */
-  --nav-hover-color: #f3f8f9; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #00dafe; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #00dafe; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #fcfbfa; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #f8fdfe;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #f3f8f9;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #00dafe;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #00dafe;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #fcfbfa;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -307,6 +319,7 @@ h6 {
 
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
+
   /* .mobile-nav-toggle {
     color: var(--nav-color);
     font-size: 28px;
@@ -316,14 +329,19 @@ h6 {
     transition: color 0.3s;
   } */
   .mobile-nav-toggle {
-    position: absolute; /* Set consistent positioning */
-    top: 15px;          /* Align to the same top value */
-    right: 15px;        /* Align to the same right value */
+    position: absolute;
+    /* Set consistent positioning */
+    top: 15px;
+    /* Align to the same top value */
+    right: 15px;
+    /* Align to the same right value */
     color: var(--nav-color);
     font-size: 28px;
     line-height: 0;
-    z-index: 9999;      /* Ensure it stays above other elements */
-    transition: color 0.3s, transform 0.3s; /* Optional transition for effects */
+    z-index: 9999;
+    /* Ensure it stays above other elements */
+    transition: color 0.3s, transform 0.3s;
+    /* Optional transition for effects */
   }
 
   .navmenu {
@@ -430,13 +448,20 @@ h6 {
     z-index: 9999;
   } */
   .mobile-nav-active .mobile-nav-toggle {
-    position: absolute; /* Same as above */
-    top: 15px;          /* Same top alignment */
-    right: 15px;        /* Same right alignment */
-    font-size: 32px;    /* Optional for slight differentiation */
-    z-index: 9999;      /* Matches the hamburger button */
-    color: #fff;        /* Optional color change for the close button */
-    transform: rotate(180deg); /* Optional: visual rotation */
+    position: absolute;
+    /* Same as above */
+    top: 15px;
+    /* Same top alignment */
+    right: 15px;
+    /* Same right alignment */
+    font-size: 32px;
+    /* Optional for slight differentiation */
+    z-index: 9999;
+    /* Matches the hamburger button */
+    color: #fff;
+    /* Optional color change for the close button */
+    transform: rotate(180deg);
+    /* Optional: visual rotation */
   }
 
   .mobile-nav-active .navmenu {
@@ -453,20 +478,20 @@ h6 {
 
 /* ============================= slider ====================== */
 #slider {
-	position: relative;
-	z-index: 10;
+  position: relative;
+  z-index: 10;
 }
 
 .subpage #slider>.img {
-	width: 100%;
-	position: relative;
-	z-index: 1;
+  width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .subpage #slider>.img img {
-	width: 100%;
-	position: relative;
-	z-index: 1;
+  width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 
@@ -603,7 +628,7 @@ h6 {
   position: relative;
   width: 100%;
   height: 4px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   overflow: hidden;
   border-radius: 50px;
 }
@@ -632,6 +657,7 @@ h6 {
   0% {
     left: -40%;
   }
+
   100% {
     left: 100%;
   }
@@ -683,9 +709,12 @@ h6 {
 
 .whatsapp-button {
   position: fixed;
-  bottom: 65px; /* Distance from the bottom of the screen */
-  right: 20px; /* Distance from the right of the screen */
-  background-color: #25d366; /* WhatsApp green */
+  bottom: 65px;
+  /* Distance from the bottom of the screen */
+  right: 20px;
+  /* Distance from the right of the screen */
+  background-color: #25d366;
+  /* WhatsApp green */
   color: white;
   border-radius: 50%;
   width: 50px;
@@ -695,7 +724,8 @@ h6 {
   justify-content: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-decoration: none;
-  z-index: 1000; /* Ensure it appears above other elements */
+  z-index: 1000;
+  /* Ensure it appears above other elements */
 }
 
 .whatsapp-button i {
@@ -703,7 +733,8 @@ h6 {
 }
 
 .whatsapp-button:hover {
-  background-color: #1ebe57; /* Darker green on hover */
+  background-color: #1ebe57;
+  /* Darker green on hover */
 }
 
 @media (max-width: 768px) {
@@ -832,7 +863,8 @@ section,
 .swiper {
   width: 100%;
   height: 100vh;
-  padding-top: 40px; /* Full height for large devices */
+  padding-top: 40px;
+  /* Full height for large devices */
 }
 
 .swiper-slide {
@@ -840,13 +872,16 @@ section,
   align-items: center;
   justify-content: center;
   font-size: 24px;
-  background: #f7f5f5; /* Background color as fallback */
+  background: #f7f5f5;
+  /* Background color as fallback */
 }
 
 .swiper-slide img {
-  width: 100%; /* Default image size */
+  width: 100%;
+  /* Default image size */
   height: auto;
-  max-height: 100%; /* Prevents overly large images */
+  max-height: 100%;
+  /* Prevents overly large images */
   border-radius: 10px;
   box-shadow: 0px 10px 20px rgba(119, 118, 118, 0.5);
 }
@@ -871,14 +906,18 @@ section,
 /* Mobile styles */
 @media (max-width: 768px) {
   .swiper {
-    height: 35vh; /* Smaller height for mobile */
+    height: 35vh;
+    /* Smaller height for mobile */
   }
 
   .swiper-slide img {
-    width: 100%; /* Full width on mobile */
-    max-height: 100%; /* Scale proportionally */
+    width: 100%;
+    /* Full width on mobile */
+    max-height: 100%;
+    /* Scale proportionally */
   }
 }
+
 /*--------------------------------------------------------------
 # Welcome header
 --------------------------------------------------------------*/
@@ -887,26 +926,33 @@ section,
   margin: 20px 0;
   color: #00dafe;
 }
+
 .header-text h2 {
   font-size: 2rem;
   font-weight: normal;
   text-align: center;
-  color: #00dafe; /* Matches the light blue tone in the image */
+  color: #00dafe;
+  /* Matches the light blue tone in the image */
   margin: 0;
 }
 
 .header-text h2 .create {
-  font-family: 'Brush Script MT', cursive; /* Artistic cursive style */
-  font-size: 5.5rem; /* Slightly larger for emphasis */
+  font-family: 'Brush Script MT', cursive;
+  /* Artistic cursive style */
+  font-size: 5.5rem;
+  /* Slightly larger for emphasis */
   font-weight: normal;
 }
 
 .header-text h2 .and-be {
-  font-family: 'Playfair Display', serif; /* Bold serif style */
+  font-family: 'Playfair Display', serif;
+  /* Bold serif style */
   font-size: 3rem;
   font-weight: bold;
-  display: block; /* Moves to the next line */
-  margin-top: 5px; /* Adjusts spacing */
+  display: block;
+  /* Moves to the next line */
+  margin-top: 5px;
+  /* Adjusts spacing */
 }
 
 /*--------------------------------------------------------------
@@ -968,6 +1014,7 @@ section,
   justify-content: center;
   margin: 20px 0;
 }
+
 .search-box input {
   width: 70%;
   border: 2px solid #00dafe;
@@ -1005,16 +1052,21 @@ section,
 
 /* Container for Buttons */
 .btn_container {
-  display: flex; /* Use flexbox for alignment */
-  justify-content: center; /* Center the buttons horizontally */
-  gap: 10px; /* Space between buttons */
-  margin: 10px auto; /* Center the container on the page */
+  display: flex;
+  /* Use flexbox for alignment */
+  justify-content: center;
+  /* Center the buttons horizontally */
+  gap: 10px;
+  /* Space between buttons */
+  margin: 10px auto;
+  /* Center the container on the page */
 }
 
 /* Responsive Layout: Stack Buttons Vertically on Small Screens */
 @media (max-width: 600px) {
   .btn_container {
-    flex-direction: row; /* Ensure buttons are side-by-side even on smaller screens */
+    flex-direction: row;
+    /* Ensure buttons are side-by-side even on smaller screens */
   }
 }
 
@@ -1048,25 +1100,31 @@ section,
 /* Mobile view: Two items per row */
 @media (max-width: 600px) {
   .gallery-item {
-    width: calc(50% - 10px); /* Adjust for the gap */
+    width: calc(50% - 10px);
+    /* Adjust for the gap */
   }
 }
 
 /* Modal styles */
 .modal {
-  display: none; /* Hidden by default */
+  display: none;
+  /* Hidden by default */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.751); /* Dark semi-transparent background */
-  backdrop-filter: blur(3px); /* Blurred background */
+  background: rgba(0, 0, 0, 0.751);
+  /* Dark semi-transparent background */
+  backdrop-filter: blur(3px);
+  /* Blurred background */
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  overflow-y: auto; /* Allow scrolling vertically if content exceeds modal height */
-  padding: 0; /* Optional padding for spacing */
+  overflow-y: auto;
+  /* Allow scrolling vertically if content exceeds modal height */
+  padding: 0;
+  /* Optional padding for spacing */
 }
 
 .modal-content {
@@ -1074,32 +1132,47 @@ section,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: auto; /* Restrict the maximum width */
-  height: auto; /* Restrict the maximum height */
-  margin: auto; /* Center content vertically and horizontally */
+  width: auto;
+  /* Restrict the maximum width */
+  height: auto;
+  /* Restrict the maximum height */
+  margin: auto;
+  /* Center content vertically and horizontally */
 }
 
-#modalImage, #modalVideo {
-  width: 100%; /* Make the image fill the modal-content */
-  max-width: 700px; /* Limit the maximum width of the image */
-  height: 100%; /* Maintain aspect ratio */
+#modalImage,
+#modalVideo {
+  width: 100%;
+  /* Make the image fill the modal-content */
+  max-width: 700px;
+  /* Limit the maximum width of the image */
+  height: 100%;
+  /* Maintain aspect ratio */
   max-height: 700px;
-  border-radius: 10px; /* Optional rounded corners */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Optional shadow for aesthetic */
+  border-radius: 10px;
+  /* Optional rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  /* Optional shadow for aesthetic */
 }
 
 .close {
   position: absolute;
-  top: 10px; /* Place the close button near the top */
-  right: 10px; /* Align close button to the top-right corner */
+  top: 10px;
+  /* Place the close button near the top */
+  right: 10px;
+  /* Align close button to the top-right corner */
   font-size: 20px;
-  color: #FFFFFF; /* Pure bright white */
+  color: #FFFFFF;
+  /* Pure bright white */
   cursor: pointer;
-  background: #000000; /* Solid pure black */
+  background: #000000;
+  /* Solid pure black */
   padding: 10px 15px;
   border-radius: 50%;
-  border: 2px solid #FFFFFF; /* Bright white border */
-  z-index: 1001; /* Ensure close button is always on top */
+  border: 2px solid #FFFFFF;
+  /* Bright white border */
+  z-index: 1001;
+  /* Ensure close button is always on top */
   transition: background 0.3s, color 0.3s, transform 0.2s;
 }
 
@@ -1146,6 +1219,7 @@ section,
 .mg-wrapper::-webkit-scrollbar {
   width: 8px;
 }
+
 .mg-wrapper::-webkit-scrollbar-thumb {
   background: #999;
   border-radius: 4px;
@@ -1198,6 +1272,33 @@ section,
   border-radius: 8px;
 }
 
+/* Mobile view: Two items per row */
+@media (max-width: 600px) {
+  .mg-item {
+    width: calc(50% - 10px);
+    /* Adjust for the gap */
+  }
+
+  .mg-btn-container .mg-btn {
+    background: #111;
+    color: #fff;
+    border: none;
+    margin: 2px;
+    padding: 5px 8px;
+    border-radius: 6px;
+    font-weight: 500;
+    /* letter-spacing: 0.5px; */
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .mg-btn:hover,
+  .mg-btn.active {
+    background: #37d4f0;
+    color: #fff;
+  }
+}
+
 /* ****************************** */
 
 /*--------------------------------------------------------------
@@ -1210,6 +1311,7 @@ section,
   gap: 20px;
   flex-wrap: wrap;
 }
+
 .card {
   border-radius: 10px;
   filter: drop-shadow(0 5px 10px 0 #ffffff);
@@ -1223,8 +1325,8 @@ section,
   transition: 0.6s ease-in;
 }
 
-.card h4{
-  color:#000000e1
+.card h4 {
+  color: #000000e1
 }
 
 .card::before {
@@ -1234,7 +1336,7 @@ section,
   top: -15px;
   right: -15px;
   background: #00dafe;
-  height:220px;
+  height: 220px;
   width: 25px;
   border-radius: 32px;
   transform: scale(1);
@@ -1242,19 +1344,19 @@ section,
   transition: transform 0.25s ease-out;
 }
 
-.card:hover::before{
-    transition-delay:0.2s ;
+.card:hover::before {
+  transition-delay: 0.2s;
 
   transform: scale(40);
 }
 
-.card:hover h4{
-    color: #ffffff;
+.card:hover h4 {
+  color: #ffffff;
 
 }
 
-.card p{
-    padding: 10px 0;
+.card p {
+  padding: 10px 0;
 }
 
 
@@ -1368,17 +1470,19 @@ section,
 .review-stars {
   display: flex;
   align-items: center;
-  gap: 2px; /* Adjust spacing between stars */
+  gap: 2px;
+  /* Adjust spacing between stars */
 }
 
 .star {
   display: inline-block;
-  width: 20px; /* Adjust size */
-  height: 20px; /* Adjust size */
-  clip-path: polygon(
-    50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 
-    50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
-  ); /* Star shape */
+  width: 20px;
+  /* Adjust size */
+  height: 20px;
+  /* Adjust size */
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%,
+      50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  /* Star shape */
 }
 
 /* Full Star */
@@ -1393,12 +1497,15 @@ section,
 
 /* Empty Star */
 .star.empty {
-  background-color: #ddd; /* Gray for empty star */
+  background-color: #ddd;
+  /* Gray for empty star */
 }
 
 .review-count {
-  color: #666; /* Review count color */
-  font-size: 2rem; /* Adjust size as needed */
+  color: #666;
+  /* Review count color */
+  font-size: 2rem;
+  /* Adjust size as needed */
 }
 
 
@@ -1625,24 +1732,30 @@ section,
 
 .icon-container {
   display: flex;
-  gap: 20px; /* Adjust spacing between icons */
+  gap: 20px;
+  /* Adjust spacing between icons */
 }
 
 .icon {
-  width: 80px; /* Adjust size */
+  width: 80px;
+  /* Adjust size */
   height: auto;
 }
 
 /* Hover effect */
 .icon:hover {
-  transform: scale(1.1); /* Grows the icon slightly */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  transform: scale(1.1);
+  /* Grows the icon slightly */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  /* Adds a subtle shadow */
 }
 
 /* Active/click effect */
 .icon:active {
-  transform: scale(0.95); /* Slightly shrinks on click */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Reduces shadow for a pressed effect */
+  transform: scale(0.95);
+  /* Slightly shrinks on click */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  /* Reduces shadow for a pressed effect */
 }
 
 /* Responsive adjustments */

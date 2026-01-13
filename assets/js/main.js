@@ -262,7 +262,7 @@
 })();
 
 //gallery modal
-const galleryItems = document.querySelectorAll('.gallery-item');
+const galleryItems = document.querySelectorAll('.mg-item');
 const modal = document.getElementById('modal');
 const modalImage = document.getElementById('modalImage');
 const modalVideo = document.getElementById('modalVideo');
