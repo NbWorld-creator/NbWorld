@@ -153,7 +153,7 @@
                   YouTube video, shorts/real, and more.</span></li>
             </ul>
             <p><b>Our goal is to help you achieve your marketing and branding objectives through innovative and
-                effective visual communication.</b></p>
+                effective visual communication.</b></p>
           </div>
 
         </div>
@@ -176,8 +176,8 @@
 
         <!-- Filter Buttons -->
         <div class="mg-btn-container mb-4 text-center">
-          <button class="mg-btn active" data-filter="all">All</button>
-          <button class="mg-btn" data-filter="photo">Poster</button>
+          <!-- <button class="mg-btn active" data-filter="all">All</button> -->
+          <button class="mg-btn active" data-filter="photo">Poster</button>
           <button class="mg-btn" data-filter="video">Videos</button>
           <button class="mg-btn" data-filter="festival">Festival</button>
           <button class="mg-btn" data-filter="logo">Logo</button>
@@ -474,7 +474,7 @@
             </a>
 
             <!-- 🧩 Logos -->
-             <a href="assets/img/logoGallery/GI1.jpg" class="glightbox mg-item logo" data-gallery="nbworld-gallery">
+            <a href="assets/img/logoGallery/GI1.jpg" class="glightbox mg-item logo" data-gallery="nbworld-gallery">
               <img src="assets/img/logoGallery/GI1.jpg" alt="Logo 1">
             </a>
             <a href="assets/img/logoGallery/GI2.jpg" class="glightbox mg-item logo" data-gallery="nbworld-gallery">
@@ -624,29 +624,29 @@
             <!-- 🎬 Videos -->
             <!-- 🎬 Videos Section (Fixed for GLightbox) -->
             <!-- 🎬 Videos (iframe-based and properly filtered) -->
-            <div class="mg-item video" data-gallery="nbworld-gallery">
+            <a class="mg-item video" data-gallery="nbworld-gallery">
               <iframe width="300" height="200" src="https://www.youtube.com/embed/0geOjek9IvI"
                 title="JBL AUTHENTIC 300 ADVERTISEMENT | NB WORLD" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
               </iframe>
-            </div>
+            </a>
 
-            <div class="mg-item video" data-gallery="nbworld-gallery">
+            <a class="mg-item video" data-gallery="nbworld-gallery">
               <iframe width="300" height="200" src="https://www.youtube.com/embed/wuol80gToVs"
                 title="CAFE ADVERTISEMENT | THE OBED CAFE AMTALA | NB WORLD" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
               </iframe>
-            </div>
+            </a>
 
-            <div class="mg-item video" data-gallery="nbworld-gallery">
+            <a class="mg-item video" data-gallery="nbworld-gallery">
               <iframe width="300" height="200" src="https://www.youtube.com/embed/pX7VRfeQE34"
                 title="SALON ADVERTISEMENTS VIDEO | Glam And Glow | NB WORLD" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
               </iframe>
-            </div>
+            </a>
 
           </div>
         </div>
@@ -1089,8 +1089,15 @@
         const filter = button.getAttribute('data-filter');
         const items = document.querySelectorAll('#modernGallery .mg-grid > a');
 
+        // items.forEach(item => {
+        //   if (filter === 'all' || item.classList.contains(filter)) {
+        //     item.style.display = '';
+        //   } else {
+        //     item.style.display = 'none';
+        //   }
+        // });
         items.forEach(item => {
-          if (filter === 'all' || item.classList.contains(filter)) {
+          if (item.classList.contains(filter)) {
             item.style.display = '';
           } else {
             item.style.display = 'none';
@@ -1098,6 +1105,9 @@
         });
       });
     });
+
+    // ✅ APPLY DEFAULT FILTER ON PAGE LOAD
+    document.querySelector('.mg-btn.active')?.click();
 
     // --- Lightbox Initialization ---
     const lightbox = GLightbox({
@@ -1110,8 +1120,8 @@
     });
 
     window.addEventListener("load", () => {
-    document.getElementById("preloader").classList.add("hide");
-  });
+      document.getElementById("preloader").classList.add("hide");
+    });
   </script>
 
 
